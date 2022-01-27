@@ -42,11 +42,13 @@ python3 src/main.py --help
 |rules  | Please provide your rule-based rules inside of config.py                  |
 
 
+
+### Script
 ```shell
 python3 main.py match_dates --text "this is a test with date of 05-02-1998 and also includes 28/12/2022 and can have the format of January, 12 1994. end of example" --format True
 ```
 
-### Output Example
+#### Output Example
 
 ```json
 {"regex_output": {"start": 28, "end": 38, "token": "05-02-1998", "source": "Regex", "type": "Dates"}, "token": "1998-05-02"}
@@ -55,11 +57,12 @@ python3 main.py match_dates --text "this is a test with date of 05-02-1998 and a
 
 ```
 
+### Script
 ```shell
 python3 main.py match_dates --text "this is a test with date of 05-02-1998 and also includes 28/12/2022 and can have the format of January, 12 1994. end of example" --format False
 ```
 
-### Output Example
+#### Output Example
 
 ```json
 {"regex_output": {"start": 28, "end": 38, "token": "05-02-1998", "source": "Regex", "type": "Dates"}, "token": "05-02-1998"}
@@ -68,11 +71,12 @@ python3 main.py match_dates --text "this is a test with date of 05-02-1998 and a
 ```
 
 
+### Script
 ```shell
 python3 main.py match_dates --text "this is a test with date of 05-02-1998 and also includes 28/12/2022 and can have the format of January, 12 1994. end of example" --eightify True --format True
 ```
 
-### Output Example
+#### Output Example
 
 
 ```json
@@ -82,11 +86,12 @@ python3 main.py match_dates --text "this is a test with date of 05-02-1998 and a
 ```
 
 
+### Script
 ```shell
 python3 main.py match_dates --text "this is a test with date of 05-02-1998 and also includes 28/12/2022 and can have the format of January, 12 1994. end of example" --eightify True --format False
 ```
 
-### Output Example
+#### Output Example
 
 ```json
 {"regex_output": {"start": 28, "end": 38, "token": "05-02-1998", "source": "Regex", "type": "Dates"}, "token": "88-88-8888"}
