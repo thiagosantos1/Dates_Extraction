@@ -32,7 +32,7 @@ python3 src/main.py --help
 
 
 
-## Example of Extracting Dates using taks match_dates
+## Example of Extracting Dates using task match_dates
 
 |Input Option| Description            |
 |------------|-----------------------------|
